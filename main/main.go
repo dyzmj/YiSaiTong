@@ -45,7 +45,7 @@ func main() {
 		// }
 		ext := strings.ToLower(filepath.Ext(path))
 
-		if ext == ".pdf" || ext == ".doc" || ext == ".docx" || ext == ".xls" || ext == ".xlsx" || ext == ".ppt" || ext == ".pptx" {
+		if ext == ".pdf" || ext == ".doc" || ext == ".docx" || ext == ".xls" || ext == ".xlsx" || ext == ".ppt" || ext == ".pptx" || ext == ".java" || ext == ".txt" || ext == ".kt" || ext == ".class" {
 			dstFilePath := path + ".temp"
 			copyFile(path, dstFilePath)
 			err := os.Remove(path)
